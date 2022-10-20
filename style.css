@@ -1,0 +1,106 @@
+.canvas{
+    width: 600px;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.lekki{
+    color: #fc1c5b;
+    position: relative;
+}
+.light-off{
+    width: 265px;
+    height: 400px;
+    background: url('lightoff.JPG') no-repeat;
+    margin: auto;
+}
+
+.light-on{
+    width: 265px;
+    height: 400px;
+    background: url('lighton.JPG') no-repeat;;
+    margin: auto;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+body{
+    background-color: #ffffff;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.notes{
+    display: inline-block;
+    color: bisque;
+}
+.wrapper{
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+
+.wrapper1{
+    box-sizing: content-box;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+.words{
+    overflow: hidden;
+}
+
+.words1{
+    overflow: hidden;
+}
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #fc1c5b;
+    animation: spin_words 10s infinite;
+}
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
